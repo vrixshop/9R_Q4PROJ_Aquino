@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Conversion Calculator
+	</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style type="text/css">
+	
+.table{
+	border-radius: 4px;
+}
+
+.table2{
+	border-radius: 30px;
+}
+
+body{
+	background: url(https://img.freepik.com/free-vector/dark-technology-hexagonal-background_91128-1258.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+hr{
+	background-color: white;
+}
+</style>
+
+</head>
+
+<body>
+<center>
+	<br><br>
+	<br><br>
+	<h2 style="color: white;">
+		Other Converters:
+	</h2>
+	<table style="background: gray;" align="center">
+		<tr style="color: black">
+			<td>
+				<button class="btn btn-outline-light btn-md">
+					<a href="9R_Q4PROJ_Aquino.html" style="color: black">
+						Milimeters
+					</a>
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-outline-light btn-md">
+					<a href="9R_Q4PROJ_AquinoCM.html" style="color: black">
+						Centimeters
+					</a>
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-outline-light btn-md">
+					<a href="9R_Q4PROJ_AquinoM.html" style="color: black">
+						Meters
+					</a>
+				</button>
+			</td>
+			<td>
+				<button class="btn btn-light btn-md disabled">
+						Kilometers
+				</button>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="container m-5">
+	<h1 style="color: white">
+		Conversion Calculator
+	</h1>
+	<p style="color: grey">
+		-- Please type in desired value --
+	</p>
+	<hr>
+<table align="center" style="background-image: url(https://st2.depositphotos.com/4397757/8688/v/600/depositphotos_86886930-stock-illustration-sewing-hand-drawn-vector-pattern.jpg);" class="table2" width="700px">
+	<tr align="center">
+		<td>
+	<h3 style="color: black;">
+		<br><br>
+		Milimeters
+		<hr>
+	</h3>
+	<input type="number" id="MMrs" placeholder="Kilometers">
+	<button onclick="mmrs();">
+		Convert to Milimeters
+	</button>
+		</td>
+		<td>
+			
+		</td>
+		<td colspan="2">
+	<h3 style="color: black">
+		<br><br>
+		Centimeters
+		<hr>
+	</h3>
+	<input type="number" id="CMrs" placeholder="Kilometers">
+	<button onclick="cmrs();">
+		Convert to Centimeters
+	</button>
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" align="center">
+			<h3 align="center" style="color: black">
+				<br><br>
+				Meters
+				<hr>
+			</h3>
+			<input type="number" id="Mrs" placeholder="Kilometers">
+			<br>
+			<button onclick="mrs();">
+				Convert to Meters
+			</button>
+			<br><br>
+			<br><br>
+		</td>
+	</tr>
+</table>
+</div>
+</center>
+<div class="container">
+
+</body>
+<script type="text/javascript">
+	function mmrs(){
+		let a = parseInt(document.getElementById("MMrs").value);
+		alert(a*1000*100*10);
+	}
+	function cmrs(){
+		let a = parseInt(document.getElementById("CMrs").value);
+		alert(a*1000*100);
+	}
+	function mrs(){
+		let a = parseInt(document.getElementById("Mrs").value);
+		alert(a*1000);
+	}
+</script>
+</html>
